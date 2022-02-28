@@ -5,7 +5,7 @@ This package downloads the data for the [PSST challenge](https://psst.study).
 ## Just the data, please!
 
 If you're not using Python, or you'd like write your own code to parse the files, you can download the data set directly 
-from TalkBank. See [the challenge guidelines](https://media.talkbank.org/aphasia/RaPID/) for more details.
+from TalkBank. See [the challenge guidelines](https://psst.study/join/) for more details.
 
 ## Installation
 With a minimum of Python 3.X installed, `psstdata` can be installed using `pip`:
