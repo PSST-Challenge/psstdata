@@ -1,0 +1,250 @@
+id	session	prompt	transcript_ipa	transcript_arpabet	code	filename	duration_frames	aq_index	is_correct
+MF01a-BNT02-comb	MF01a	comb	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+MF01a-BNT04-octopus	MF01a	octopus	haʊ's	HH AW S	F	test/audio/empty.wav	28992	12.3	False
+MF01a-BNT07-canoe	MF01a	canoe	haʊ's	HH AW S	F	test/audio/empty.wav	28992	12.3	False
+MF01a-BNT11-stethoscope	MF01a	stethoscope	haʊ's	HH AW S	M	test/audio/empty.wav	28992	12.3	False
+MF01a-BNT12-unicorn	MF01a	unicorn	haʊ's	HH AW S	M	test/audio/empty.wav	28992	12.3	False
+MF01a-VNT01-01	MF01a	01	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT02-02	MF01a	02	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT03-03	MF01a	03	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT04-04	MF01a	04	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT05-05	MF01a	05	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT06-06	MF01a	06	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT07-07	MF01a	07	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT08-08	MF01a	08	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT09-09	MF01a	09	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT10-10	MF01a	10	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT11-11	MF01a	11	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT12-12	MF01a	12	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT15-15	MF01a	15	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT16-16	MF01a	16	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT18-18	MF01a	18	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT19-19	MF01a	19	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT20-20	MF01a	20	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT21-21	MF01a	21	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF01a-VNT22-22	MF01a	22	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-BNT01-house	MF28a	house	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+MF28a-BNT02-comb	MF28a	comb	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+MF28a-BNT03-toothbrush	MF28a	toothbrush	haʊ's	HH AW S	MO	test/audio/empty.wav	28992	12.3	False
+MF28a-BNT05-bench	MF28a	bench	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+MF28a-BNT06-volcano	MF28a	volcano	haʊ's	HH AW S	S	test/audio/empty.wav	28992	12.3	False
+MF28a-BNT07-canoe	MF28a	canoe	haʊ's	HH AW S	S	test/audio/empty.wav	28992	12.3	False
+MF28a-BNT08-beaver	MF28a	beaver	haʊ's	HH AW S	M	test/audio/empty.wav	28992	12.3	False
+MF28a-BNT10-hammock	MF28a	hammock	haʊ's	HH AW S	O	test/audio/empty.wav	28992	12.3	False
+MF28a-BNT11-stethoscope	MF28a	stethoscope	haʊ's	HH AW S	M	test/audio/empty.wav	28992	12.3	False
+MF28a-BNT12-unicorn	MF28a	unicorn	haʊ's	HH AW S	M	test/audio/empty.wav	28992	12.3	False
+MF28a-BNT14-sphinx	MF28a	sphinx	haʊ's	HH AW S	M	test/audio/empty.wav	28992	12.3	False
+MF28a-VNT01-01	MF28a	01	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT02-02	MF28a	02	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT03-03	MF28a	03	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT04-04	MF28a	04	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT05-05	MF28a	05	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT06-06	MF28a	06	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT07-07	MF28a	07	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT08-08	MF28a	08	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT09-09	MF28a	09	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT11-11	MF28a	11	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT12-12	MF28a	12	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT13-13	MF28a	13	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT14-14	MF28a	14	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT16-16	MF28a	16	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT18-18	MF28a	18	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT19-19	MF28a	19	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT20-20	MF28a	20	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+MF28a-VNT22-22	MF28a	22	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-BNT02-comb	SDB14a	comb	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+SDB14a-BNT05-bench	SDB14a	bench	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+SDB14a-BNT14-sphinx	SDB14a	sphinx	haʊ's	HH AW S	F	test/audio/empty.wav	28992	12.3	False
+SDB14a-BNT15-palette	SDB14a	palette	haʊ's	HH AW S	M	test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT03-03	SDB14a	03	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT04-04	SDB14a	04	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT05-05	SDB14a	05	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT06-06	SDB14a	06	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT07-07	SDB14a	07	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT08-08	SDB14a	08	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT09-09	SDB14a	09	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT10-10	SDB14a	10	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT11-11	SDB14a	11	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT12-12	SDB14a	12	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT13-13	SDB14a	13	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT14-14	SDB14a	14	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT15-15	SDB14a	15	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT16-16	SDB14a	16	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT18-18	SDB14a	18	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT19-19	SDB14a	19	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT20-20	SDB14a	20	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+SDB14a-VNT21-21	SDB14a	21	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-BNT01-house	GF10a	house	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+GF10a-BNT05-bench	GF10a	bench	haʊ's	HH AW S	S	test/audio/empty.wav	28992	12.3	False
+GF10a-BNT11-stethoscope	GF10a	stethoscope	haʊ's	HH AW S	M	test/audio/empty.wav	28992	12.3	False
+GF10a-VNT01-01	GF10a	01	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT02-02	GF10a	02	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT03-03	GF10a	03	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT04-04	GF10a	04	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT05-05	GF10a	05	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT06-06	GF10a	06	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT07-07	GF10a	07	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT08-08	GF10a	08	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT09-09	GF10a	09	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT10-10	GF10a	10	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT11-11	GF10a	11	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT12-12	GF10a	12	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT14-14	GF10a	14	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT15-15	GF10a	15	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT16-16	GF10a	16	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT18-18	GF10a	18	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT19-19	GF10a	19	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT21-21	GF10a	21	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF10a-VNT22-22	GF10a	22	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-BNT01-house	GF17a	house	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+GF17a-BNT02-comb	GF17a	comb	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+GF17a-BNT03-toothbrush	GF17a	toothbrush	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+GF17a-BNT05-bench	GF17a	bench	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+GF17a-BNT06-volcano	GF17a	volcano	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+GF17a-BNT07-canoe	GF17a	canoe	haʊ's	HH AW S	S	test/audio/empty.wav	28992	12.3	False
+GF17a-BNT09-cactus	GF17a	cactus	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+GF17a-BNT10-hammock	GF17a	hammock	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+GF17a-BNT11-stethoscope	GF17a	stethoscope	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+GF17a-BNT12-unicorn	GF17a	unicorn	haʊ's	HH AW S	M	test/audio/empty.wav	28992	12.3	False
+GF17a-BNT13-tripod	GF17a	tripod	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+GF17a-BNT15-palette	GF17a	palette	haʊ's	HH AW S	M	test/audio/empty.wav	28992	12.3	False
+GF17a-VNT01-01	GF17a	01	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT02-02	GF17a	02	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT04-04	GF17a	04	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT05-05	GF17a	05	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT06-06	GF17a	06	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT07-07	GF17a	07	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT08-08	GF17a	08	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT09-09	GF17a	09	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT10-10	GF17a	10	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT11-11	GF17a	11	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT12-12	GF17a	12	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT13-13	GF17a	13	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT14-14	GF17a	14	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT16-16	GF17a	16	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT17-17	GF17a	17	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT18-18	GF17a	18	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT19-19	GF17a	19	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT20-20	GF17a	20	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT21-21	GF17a	21	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+GF17a-VNT22-22	GF17a	22	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-BNT01-house	RCG02a	house	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG02a-BNT02-comb	RCG02a	comb	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG02a-BNT03-toothbrush	RCG02a	toothbrush	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG02a-BNT04-octopus	RCG02a	octopus	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG02a-BNT05-bench	RCG02a	bench	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG02a-BNT06-volcano	RCG02a	volcano	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG02a-BNT07-canoe	RCG02a	canoe	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG02a-BNT08-beaver	RCG02a	beaver	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG02a-BNT10-hammock	RCG02a	hammock	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG02a-BNT11-stethoscope	RCG02a	stethoscope	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG02a-BNT12-unicorn	RCG02a	unicorn	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG02a-BNT13-tripod	RCG02a	tripod	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG02a-BNT14-sphinx	RCG02a	sphinx	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+RCG02a-BNT15-palette	RCG02a	palette	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG02a-VNT01-01	RCG02a	01	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT02-02	RCG02a	02	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT03-03	RCG02a	03	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT04-04	RCG02a	04	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT05-05	RCG02a	05	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT06-06	RCG02a	06	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT07-07	RCG02a	07	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT08-08	RCG02a	08	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT09-09	RCG02a	09	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT10-10	RCG02a	10	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT11-11	RCG02a	11	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT12-12	RCG02a	12	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT13-13	RCG02a	13	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT14-14	RCG02a	14	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT15-15	RCG02a	15	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT16-16	RCG02a	16	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT17-17	RCG02a	17	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT19-19	RCG02a	19	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT20-20	RCG02a	20	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT21-21	RCG02a	21	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG02a-VNT22-22	RCG02a	22	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-BNT01-house	RCG15a	house	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+RCG15a-BNT02-comb	RCG15a	comb	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG15a-BNT03-toothbrush	RCG15a	toothbrush	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+RCG15a-BNT04-octopus	RCG15a	octopus	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+RCG15a-BNT05-bench	RCG15a	bench	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG15a-BNT06-volcano	RCG15a	volcano	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+RCG15a-BNT07-canoe	RCG15a	canoe	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG15a-BNT08-beaver	RCG15a	beaver	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG15a-BNT09-cactus	RCG15a	cactus	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+RCG15a-BNT10-hammock	RCG15a	hammock	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+RCG15a-BNT11-stethoscope	RCG15a	stethoscope	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+RCG15a-BNT12-unicorn	RCG15a	unicorn	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+RCG15a-BNT13-tripod	RCG15a	tripod	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+RCG15a-BNT14-sphinx	RCG15a	sphinx	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG15a-BNT15-palette	RCG15a	palette	haʊ's	HH AW S	F	test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT01-01	RCG15a	01	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT02-02	RCG15a	02	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT03-03	RCG15a	03	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT04-04	RCG15a	04	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT05-05	RCG15a	05	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT06-06	RCG15a	06	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT07-07	RCG15a	07	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT08-08	RCG15a	08	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT09-09	RCG15a	09	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT10-10	RCG15a	10	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT11-11	RCG15a	11	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT12-12	RCG15a	12	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT13-13	RCG15a	13	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT14-14	RCG15a	14	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT15-15	RCG15a	15	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT16-16	RCG15a	16	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT17-17	RCG15a	17	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT18-18	RCG15a	18	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT19-19	RCG15a	19	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT20-20	RCG15a	20	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT21-21	RCG15a	21	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG15a-VNT22-22	RCG15a	22	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-BNT01-house	RCG19a	house	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG19a-BNT02-comb	RCG19a	comb	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG19a-BNT03-toothbrush	RCG19a	toothbrush	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+RCG19a-BNT04-octopus	RCG19a	octopus	haʊ's	HH AW S	S	test/audio/empty.wav	28992	12.3	False
+RCG19a-BNT05-bench	RCG19a	bench	haʊ's	HH AW S	S	test/audio/empty.wav	28992	12.3	False
+RCG19a-BNT06-volcano	RCG19a	volcano	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+RCG19a-BNT08-beaver	RCG19a	beaver	haʊ's	HH AW S	C	test/audio/empty.wav	28992	12.3	True
+RCG19a-BNT09-cactus	RCG19a	cactus	haʊ's	HH AW S	N	test/audio/empty.wav	28992	12.3	False
+RCG19a-BNT12-unicorn	RCG19a	unicorn	haʊ's	HH AW S	F	test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT01-01	RCG19a	01	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT02-02	RCG19a	02	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT03-03	RCG19a	03	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT04-04	RCG19a	04	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT05-05	RCG19a	05	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT06-06	RCG19a	06	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT07-07	RCG19a	07	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT08-08	RCG19a	08	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT09-09	RCG19a	09	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT10-10	RCG19a	10	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT11-11	RCG19a	11	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT12-12	RCG19a	12	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT13-13	RCG19a	13	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT14-14	RCG19a	14	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT15-15	RCG19a	15	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT16-16	RCG19a	16	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT17-17	RCG19a	17	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT18-18	RCG19a	18	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT21-21	RCG19a	21	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG19a-VNT22-22	RCG19a	22	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-BNT05-bench	RCG21a	bench	haʊ's	HH AW S	O	test/audio/empty.wav	28992	12.3	False
+RCG21a-BNT08-beaver	RCG21a	beaver	haʊ's	HH AW S	S	test/audio/empty.wav	28992	12.3	False
+RCG21a-BNT09-cactus	RCG21a	cactus	haʊ's	HH AW S	F	test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT01-01	RCG21a	01	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT02-02	RCG21a	02	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT03-03	RCG21a	03	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT04-04	RCG21a	04	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT05-05	RCG21a	05	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT07-07	RCG21a	07	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT08-08	RCG21a	08	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT10-10	RCG21a	10	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT11-11	RCG21a	11	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT12-12	RCG21a	12	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT13-13	RCG21a	13	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT14-14	RCG21a	14	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT15-15	RCG21a	15	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT17-17	RCG21a	17	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT20-20	RCG21a	20	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False
+RCG21a-VNT22-22	RCG21a	22	haʊ's	HH AW S		test/audio/empty.wav	28992	12.3	False

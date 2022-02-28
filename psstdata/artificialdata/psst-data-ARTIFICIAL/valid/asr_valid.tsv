@@ -1,0 +1,102 @@
+id	session	prompt	transcript_ipa	transcript_arpabet	code	filename	duration_frames	aq_index	is_correct
+MF31a-BNT01-house	MF31a	house	haʊ's	HH AW S	S	valid/audio/empty.wav	28992	12.3	False
+MF31a-BNT03-toothbrush	MF31a	toothbrush	haʊ's	HH AW S	F	valid/audio/empty.wav	28992	12.3	False
+MF31a-BNT05-bench	MF31a	bench	haʊ's	HH AW S	O	valid/audio/empty.wav	28992	12.3	False
+MF31a-BNT07-canoe	MF31a	canoe	haʊ's	HH AW S	F	valid/audio/empty.wav	28992	12.3	False
+MF31a-BNT15-palette	MF31a	palette	haʊ's	HH AW S	F	valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT01-01	MF31a	01	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT02-02	MF31a	02	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT05-05	MF31a	05	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT06-06	MF31a	06	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT07-07	MF31a	07	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT08-08	MF31a	08	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT09-09	MF31a	09	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT10-10	MF31a	10	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT11-11	MF31a	11	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT12-12	MF31a	12	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT13-13	MF31a	13	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT14-14	MF31a	14	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT15-15	MF31a	15	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT16-16	MF31a	16	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT18-18	MF31a	18	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT19-19	MF31a	19	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+MF31a-VNT21-21	MF31a	21	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-BNT02-comb	SDB11a	comb	haʊ's	HH AW S	AN	valid/audio/empty.wav	28992	12.3	False
+SDB11a-BNT05-bench	SDB11a	bench	haʊ's	HH AW S	F	valid/audio/empty.wav	28992	12.3	False
+SDB11a-BNT06-volcano	SDB11a	volcano	haʊ's	HH AW S	N	valid/audio/empty.wav	28992	12.3	False
+SDB11a-BNT07-canoe	SDB11a	canoe	haʊ's	HH AW S	S	valid/audio/empty.wav	28992	12.3	False
+SDB11a-BNT09-cactus	SDB11a	cactus	haʊ's	HH AW S	N	valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT01-01	SDB11a	01	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT02-02	SDB11a	02	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT03-03	SDB11a	03	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT04-04	SDB11a	04	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT05-05	SDB11a	05	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT06-06	SDB11a	06	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT07-07	SDB11a	07	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT09-09	SDB11a	09	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT10-10	SDB11a	10	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT11-11	SDB11a	11	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT12-12	SDB11a	12	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT13-13	SDB11a	13	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT14-14	SDB11a	14	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT15-15	SDB11a	15	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT16-16	SDB11a	16	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT18-18	SDB11a	18	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT19-19	SDB11a	19	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT21-21	SDB11a	21	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+SDB11a-VNT22-22	SDB11a	22	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-BNT01-house	GF06a	house	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+GF06a-BNT02-comb	GF06a	comb	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+GF06a-BNT03-toothbrush	GF06a	toothbrush	haʊ's	HH AW S	MO	valid/audio/empty.wav	28992	12.3	False
+GF06a-BNT04-octopus	GF06a	octopus	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+GF06a-BNT05-bench	GF06a	bench	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+GF06a-BNT06-volcano	GF06a	volcano	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+GF06a-BNT07-canoe	GF06a	canoe	haʊ's	HH AW S	S	valid/audio/empty.wav	28992	12.3	False
+GF06a-BNT09-cactus	GF06a	cactus	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+GF06a-BNT11-stethoscope	GF06a	stethoscope	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+GF06a-BNT12-unicorn	GF06a	unicorn	haʊ's	HH AW S	M	valid/audio/empty.wav	28992	12.3	False
+GF06a-BNT13-tripod	GF06a	tripod	haʊ's	HH AW S	S	valid/audio/empty.wav	28992	12.3	False
+GF06a-BNT14-sphinx	GF06a	sphinx	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+GF06a-BNT15-palette	GF06a	palette	haʊ's	HH AW S	F	valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT01-01	GF06a	01	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT02-02	GF06a	02	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT03-03	GF06a	03	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT04-04	GF06a	04	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT05-05	GF06a	05	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT07-07	GF06a	07	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT08-08	GF06a	08	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT09-09	GF06a	09	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT10-10	GF06a	10	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT11-11	GF06a	11	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT12-12	GF06a	12	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT13-13	GF06a	13	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT14-14	GF06a	14	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT15-15	GF06a	15	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT16-16	GF06a	16	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT19-19	GF06a	19	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT20-20	GF06a	20	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT21-21	GF06a	21	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+GF06a-VNT22-22	GF06a	22	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+RCG18a-BNT01-house	RCG18a	house	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+RCG18a-BNT02-comb	RCG18a	comb	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+RCG18a-BNT03-toothbrush	RCG18a	toothbrush	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+RCG18a-BNT04-octopus	RCG18a	octopus	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+RCG18a-BNT05-bench	RCG18a	bench	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+RCG18a-BNT06-volcano	RCG18a	volcano	haʊ's	HH AW S	N	valid/audio/empty.wav	28992	12.3	False
+RCG18a-BNT07-canoe	RCG18a	canoe	haʊ's	HH AW S	S	valid/audio/empty.wav	28992	12.3	False
+RCG18a-BNT08-beaver	RCG18a	beaver	haʊ's	HH AW S	F	valid/audio/empty.wav	28992	12.3	False
+RCG18a-BNT09-cactus	RCG18a	cactus	haʊ's	HH AW S	C	valid/audio/empty.wav	28992	12.3	True
+RCG18a-BNT10-hammock	RCG18a	hammock	haʊ's	HH AW S	N	valid/audio/empty.wav	28992	12.3	False
+RCG18a-VNT02-02	RCG18a	02	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+RCG18a-VNT03-03	RCG18a	03	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+RCG18a-VNT04-04	RCG18a	04	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+RCG18a-VNT05-05	RCG18a	05	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+RCG18a-VNT06-06	RCG18a	06	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+RCG18a-VNT09-09	RCG18a	09	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+RCG18a-VNT10-10	RCG18a	10	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+RCG18a-VNT14-14	RCG18a	14	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+RCG18a-VNT17-17	RCG18a	17	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+RCG18a-VNT19-19	RCG18a	19	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+RCG18a-VNT20-20	RCG18a	20	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+RCG18a-VNT21-21	RCG18a	21	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False
+RCG18a-VNT22-22	RCG18a	22	haʊ's	HH AW S		valid/audio/empty.wav	28992	12.3	False

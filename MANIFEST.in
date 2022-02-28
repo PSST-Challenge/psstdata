@@ -1,0 +1,6 @@
+exclude *
+include psstdata
+recursive-include psstdata *.json *.wav *.tsv
+prune tests
+prune *.egg-info
+prune dist

@@ -1,0 +1,14 @@
+{
+    "comment": "Most recent versions are first in the list.",
+    "versions": [
+        {
+            "version_id": "ARTIFICIAL",
+            "files": {
+                "train": "psst-data-ARTIFICIAL_train.tar.gz",
+                "valid": "psst-data-ARTIFICIAL_valid.tar.gz",
+                "test": "psst-data-ARTIFICIAL1_test.tar.gz"
+            },
+            "comment": "Pre-release. Test set will not be shared until two weeks before the challenge submission deadline."
+        }
+    ]
+}
