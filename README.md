@@ -57,15 +57,15 @@ psstdata INFO: Loaded data `correctness` version 2022-03-01 from /Users/bobby/ps
 This will download data to the default directory (`~/psst-data/`) and return an object of type `PSSTData`, containing the `train`, `valid`, and `test` splits:
 
 ```python
->>> print(len(data_asr.train))
+>>> len(data_asr.train)
 
 2173
 
->>> print(len(data_asr.valid))
+>>> len(data_asr.valid)
 
 325
 
->>> print(len(data_asr.test))
+>>> len(data_asr.test)
 
 624
 ```
@@ -73,11 +73,11 @@ This will download data to the default directory (`~/psst-data/`) and return an 
 And each of those sets is a `PSSTUtteranceCollection`, which is a collection of `PSSTUtterance`:
 
 ```python
->>> print(data_asr.train[0]) 
+>>> data_asr.train[0]
 
 PSSTUtterance(id='ACWT02a-BNT01-house', session='ACWT02a', prompt='house', transcript_ipa="haʊ's", transcript_arpabet='HH AW S', filename='train/audio/bnt/ACWT02a/ACWT02a-BNT01-house.wav', duration_frames=12752, code='C', aq_index=74.6, is_correct=True)
 
->>> print(data_asr.train['ACWT02a-BNT01-house']) 
+>>> data_asr.train['ACWT02a-BNT01-house']
 
 PSSTUtterance(id='ACWT02a-BNT01-house', session='ACWT02a', prompt='house', transcript_ipa="haʊ's", transcript_arpabet='HH AW S', filename='train/audio/bnt/ACWT02a/ACWT02a-BNT01-house.wav', duration_frames=12752, code='C', aq_index=74.6, is_correct=True)
 ```
