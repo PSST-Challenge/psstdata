@@ -7,6 +7,7 @@ from typing import Dict, Tuple
 
 import psstdata
 from psstdata import CORRECTNESS_TASK, PHONEME_RECOGNITION_TASK
+from psstdata._system import cast_dict
 
 
 @dataclass
@@ -29,10 +30,13 @@ class PSSTVersion:
         return self.task_files(task=CORRECTNESS_TASK)
 
     def task_files(self, task):
-        return {
-            split_name: self._get_path(f"{split_name}/{task}_{split_name}.tsv")
-            for split_name, file in self.files.items()
-        }
+        results = {}
+        for split_name, file in self.files.items():
+            if file is None:
+                results[split_name] = None
+            else:
+                results[split_name] = self._get_path(f"{split_name}/{task}_{split_name}.tsv")
+        return results
 
     def _get_path(self, file):
         if file is None:
@@ -68,7 +72,7 @@ class PSSTVersionCollection:
 
     @classmethod
     def from_object(cls, obj, root_dir, version_filter=lambda v: True):
-        versions = (PSSTVersion(**{**v, "root_dir": root_dir}) for v in obj["versions"])
+        versions = (cast_dict({**v, "root_dir": root_dir}, PSSTVersion) for v in obj["versions"])
         return cls(
             comment=obj["comment"],
             versions=tuple([v for v in versions if version_filter(v)])

@@ -1,57 +1,40 @@
 import dataclasses
 import time
-from dataclasses import dataclass
 from getpass import getpass
-from typing import Dict
 
 import requests
-from requests.cookies import RequestsCookieJar
+from requests.auth import HTTPBasicAuth
 
-from psstdata.config import PSSTSettings
-
-
-@dataclass
-class PSSTCredentials:
-    userID: str
-    pswd: str
+import psstdata
+from psstdata.config import PSSTSettings, AUTH_COMMENT, CONFIG_FILE_SETTINGS
 
 
-class PSSTAuthToken:
-    _cookie_cache: RequestsCookieJar = None
-
-    @property
-    def cookies(self):
-        if self.expired:
-            settings = PSSTSettings.load()
-            credentials = get_credentials()
-            response = request("POST", f"{settings.auth_server}/authorizeUser", data=credentials, is_auth_request=True)
-            PSSTAuthToken._cookie_cache = response.cookies
-        return PSSTAuthToken._cookie_cache
-
-    @property
-    def expired(self):
-        if not PSSTAuthToken._cookie_cache:
-            return True
-        now = time.time()
-        return any(c.expires < now for c in PSSTAuthToken._cookie_cache)
+def request(method, url, *, data=None, stream=False, **kwargs):
+    auth = get_auth()
+    while True:
+        try:
+            response = requests.request(method, url, data=data, stream=stream, auth=auth, **kwargs)
+            response.raise_for_status()
+            return response
+        except requests.HTTPError as e:
+            if e.response.status_code == 401:
+                psstdata.logger.warning(f"Could not authenticate with TalkBank. {AUTH_COMMENT}")
+                time.sleep(0.1)  # HACK: cosmetic, gets around PyCharm's asynchronized output streams
+                auth = get_auth(reset=True)
+                continue
+            else:
+                raise
 
 
-def request(method, url, *, data=None, stream=False, is_auth_request=False, **kwargs):
-    cookies = None
-    if not is_auth_request:
-        cookies = PSSTAuthToken().cookies
-    response = requests.request(method, url, data=data, cookies=cookies, stream=stream,  **kwargs)
-    response.raise_for_status()
-    return response
 
-
-def get_credentials() -> Dict[str, str]:
+def get_auth(reset=False) -> HTTPBasicAuth:
     settings = PSSTSettings.load()
-    if not settings.download_username:
-        username = input(f"Please enter the PSST username: ")
+    if not settings.download_username or reset:
+        username = input(f"The credentials in {CONFIG_FILE_SETTINGS} were missing or incorrect.\n"
+                         f"Please enter the PSST username: ")
         password = getpass(f"Please enter the PSST password: ")
         settings = dataclasses.replace(settings, download_username=username, download_password=password)
         settings.save()
-    return {"userID": settings.download_username, "pswd": settings.download_password}
+    return HTTPBasicAuth(settings.download_username, settings.download_password)
 
 

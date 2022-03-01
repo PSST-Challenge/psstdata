@@ -2,16 +2,42 @@
 
 This package downloads the data for the [PSST challenge](https://psst.study).
 
-## Just the data, please!
+## If you run into issues
 
-If you're not using Python, or you'd like write your own code to parse the files, you can download the data set directly 
-from TalkBank. See [the challenge guidelines](https://psst.study/join/) for more details.
+First, note that this package was developed for and tested using Python 3.8, so switching to this version may serve as a workaround for some problems. If you still have problems, we'll be keeping an eye on [the project's issue tracker](https://github.com/PSST-Challenge/psstdata/issues).
+
+## Access to the data
+
+The data is hosted on TalkBank, and protected by password. To get the password and participate in the challenge, please complete [this form](https://docs.google.com/forms/d/e/1FAIpQLScwAC3j7NQ2giyFSjrNen6NhmSbnHqdxS915ftZDBRi2SHQtQ/viewform).
+
+The `psstdata` tools will prompt for these credentials upon the first download. Credentials are thereafter stored in `~/.config/psstdata/settings.json`, and the data files are kept in `~/psst-data`. (Tip: you can change where data is stored in the `settings.json`)
+
+### Just the data, please!
+
+If you're not using Python, or you'd like write your data-loading code, you can download the data set directly 
+from TalkBank. Once you have the password, head over to our resource page at [TalkBank](https://media.talkbank.org/aphasia/RaPID/). 
 
 ## Installation
-With a minimum of Python 3.X installed, `psstdata` can be installed using `pip`:
+With a minimum of Python 3.? installed, `psstdata` can be installed using `pip`:
 ```bash
 pip install psstdata
 ```
+
+- TSVs are similar in structure, different in length.
+- relative paths start at ..
+
+## Contents
+
+In addition to corpus downloading, this package contains a few additional resources that could get you set up more quickly. These are referenced in the [baseline systems](https://github.com/PSST-Challenge/psstbaseline), which you are certainly welcome to use as an example or a jumping off point!
+
+(Key: `python reference` — [json file]())
+
+- **ARPAbet symbols** (and integer mappings)
+  - `psstdata.VOCAB_ARPABET` — [psstdata/assets/vocab_arpabet.json](psstdata/assets/vocab_arpabet.json)  
+  - `psstdata.VOCAB_ARPABET_JSON` (the filename for above)
+- **"Correct" pronunciations for the BNT/VNT tasks:**
+  - `psstdata.CORRECT_PRONUNCIATIONS_BNT` — [psstdata/assets/correctness_bnt.json](psstdata/assets/correctness_bnt.json) 
+  - `psstdata.CORRECT_PRONUNCIATIONS_VNT` — [psstdata/assets/correctness_vnt.json](psstdata/assets/correctness_vnt.json)
 
 ## Basic usage
 

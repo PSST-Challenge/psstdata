@@ -1,15 +1,12 @@
-import csv
-import dataclasses
 import logging
 import os
-from functools import lru_cache
-from typing import Type
 
 import psstdata
 from psstdata import PHONEME_RECOGNITION_TASK, CORRECTNESS_TASK
+from psstdata._system import cast_dict
 from psstdata.config import PSSTSettings
 from psstdata.datastructures import PSSTData, PSSTUtteranceCollection
-from psstdata.downloading import PSSTDownloader
+from psstdata.downloading import download
 
 
 def load_asr(
@@ -65,52 +62,28 @@ def _load(
 
     valid_as_test = False
 
-    with PSSTDownloader() as downloader:
-        version = downloader.download(local_dir, version_id=version_id)
-        psstdata.logger.info(f"Loaded data `{task}` version {version.version_id} from {local_dir}")
-        if not os.path.exists(local_dir):
-            raise FileNotFoundError(local_dir)
+    version = download(local_dir, version_id=version_id)
+    if not os.path.exists(local_dir):
+        raise FileNotFoundError(local_dir)
 
-        tsv_files = version.task_files(task=task)
+    tsv_files = version.task_files(task=task)
 
-        if version.files["test"] is None:
-            psstdata.logger.warning(
-                f"The PSST `train` and `valid` sets were downloaded, but `test` is not yet released. "
-                f"Using a copy of the `valid` data as a placeholder."
-            )
-            tsv_files["test"] = tsv_files["valid"]
-            valid_as_test = True
+    if version.files["test"] is None:
+        # make it yuge
+        psstdata.logger.warning(f"")
+        psstdata.logger.warning(f"The PSST `train` and `valid` sets were downloaded, but `test` is not yet released.")
+        psstdata.logger.warning(f"Once `test` is released, you should only need to re-run this code to retrieve the additional materials.")
+        psstdata.logger.warning(f"Meantime, data labeled `test` is a copy of `valid` as a convenient placeholder.")
+        psstdata.logger.warning(f"")
 
-        data = {}
-        for split, tsv_file in tsv_files.items():
-            data[split] = PSSTUtteranceCollection.from_tsv(tsv_file)
+        tsv_files["test"] = tsv_files["valid"]
+        valid_as_test = True
 
-        return PSSTData(**data, version=version, test_is_placeholder=valid_as_test)
+    data = {}
+    for split, tsv_file in tsv_files.items():
+        data[split] = PSSTUtteranceCollection.from_tsv(tsv_file)
 
+    psstdata.logger.info(f"Loaded data `{task}` version {version.version_id} from {local_dir}")
 
-def _read_tsv(tsv_file: str, t: Type):
-    items = []
-    row_factory = _read_tsv_row_factory(t)
-    with open(tsv_file) as f:
-        reader = csv.reader(f, dialect=csv.excel_tab)
-        columns = next(reader)
-        for row in reader:
-            item = row_factory(columns, row)
-            items.append(item)
-    return items
+    return cast_dict({**data, "version": version, "test_is_placeholder": valid_as_test}, PSSTData)
 
-
-@lru_cache()
-def _read_tsv_row_factory(t: Type):
-    fields = {
-        field.name: field.type
-        for field in dataclasses.fields(t)
-    }
-
-    def cast(columns, row):
-        return t(**{
-            column: fields[column](value)
-            for column, value in zip(columns, row)
-        })
-
-    return cast

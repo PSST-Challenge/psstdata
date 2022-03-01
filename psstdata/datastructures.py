@@ -9,6 +9,7 @@ from functools import lru_cache
 from typing import Iterable, Iterator, Union, Tuple
 
 from psstdata import WAV_FRAME_RATE
+from psstdata._system import read_tsv
 from psstdata.versioning import PSSTVersion
 
 
@@ -59,20 +60,21 @@ class PSSTUtterance:
     transcript_arpabet: str
     filename: str
     duration_frames: int
-    code: str = None
     aq_index: float = None
-    root_dir: str = None
     is_correct: bool = None
+
+    root_dir: str = dataclasses.field(default=None, repr=False)
 
     @property
     def filename_absolute(self):
         if not self.root_dir:
             raise NotADirectoryError(self.root_dir)
-        return os.path.abspath(os.path.join(self.root_dir, self.filename))
 
-    # @property
-    # def transcript_ids(self) -> List[int]:
-    #     return [ARPA_TO_INT[a] for a in self.transcript_arpabet.split()]
+        if self.filename[:5] in ("train", "valid", "test/"):
+            # Fix for pre-release data. Delete once data is officially released.
+            return os.path.abspath(os.path.join(os.path.dirname(self.root_dir), self.filename))
+
+        return os.path.abspath(os.path.join(self.root_dir, self.filename))
 
     @property
     def duration(self) -> datetime.timedelta:
@@ -120,9 +122,8 @@ class PSSTUtteranceCollection(Iterable[PSSTUtterance]):
 
     @classmethod
     def from_tsv(cls, tsv_file):
-        from psstdata.loading import _read_tsv
-        split_data = _read_tsv(tsv_file, PSSTUtterance)
-        root_dir = os.path.dirname(os.path.dirname(tsv_file))
+        split_data = read_tsv(tsv_file, PSSTUtterance)
+        root_dir = os.path.dirname(tsv_file)
         split_data = (dataclasses.replace(u, root_dir=root_dir) for u in split_data)
         return cls(tuple(split_data))
 
