@@ -4,7 +4,7 @@ This package downloads the data for the [PSST challenge](https://psst.study).
 
 ## If you run into issues
 
-First, note that this package was developed for and tested using Python 3.8, so switching to this version may serve as a workaround for some problems. If you still have problems, we'll be keeping an eye on [the project's issue tracker](https://github.com/PSST-Challenge/psstdata/issues).
+First, note that this package was developed for and tested using Python 3.8 (MacOS and Linux), so switching to this version may serve as a workaround for some problems. If you still have problems, we'll be keeping an eye on [the project's issue tracker](https://github.com/PSST-Challenge/psstdata/issues).
 
 ## Access to the data
 
@@ -43,8 +43,8 @@ In addition to corpus downloading, this package contains a few additional resour
 
 >>> data = psstdata.load()
 
-psstdata INFO: Downloading a new data version: 2022-03-01
-psstdata INFO: Loaded data version 2022-03-01 from /Users/bobby/psst-data
+psstdata INFO: Downloading a new data version: 2022-03-02
+psstdata INFO: Loaded data version 2022-03-02 from /Users/bobby/psst-data
 
 ```
 
@@ -53,15 +53,15 @@ This will download data to the default directory (`~/psst-data/`) and return an 
 ```python
 >>> len(data.train)
 
-2173
+2298
 
 >>> len(data.valid)
 
-325
+341
 
 >>> len(data.test)
 
-624
+652
 ```
 
 And each of those sets is a `PSSTUtteranceCollection`, which is a collection of `PSSTUtterance`:
