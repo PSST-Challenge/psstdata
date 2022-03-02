@@ -53,8 +53,9 @@ class PSSTSessionMetadata:
 
 @dataclass(frozen=True)
 class PSSTUtterance:
-    id: str
+    utterance_id: str
     session: str
+    test: str
     prompt: str
     transcript: str
     aq_index: float
@@ -100,7 +101,7 @@ class PSSTUtteranceCollection(Iterable[PSSTUtterance]):
         if isinstance(item, int):
             return self.utterances[item]
         if isinstance(item, str):
-            return next(u for u in self.utterances if u.id == item)
+            return next(u for u in self.utterances if u.utterance_id == item)
         raise NotImplementedError()
 
     @lru_cache()
@@ -111,8 +112,8 @@ class PSSTUtteranceCollection(Iterable[PSSTUtterance]):
             for session, session_utterances in by_session
         }
 
-    def ids(self):
-        return tuple(u.id for u in self.utterances)
+    def utterance_ids(self):
+        return tuple(u.utterance_id for u in self.utterances)
 
     @classmethod
     def from_tsv(cls, tsv_file):
