@@ -95,9 +95,9 @@
     ],
     "drive": [
         "D R AY V IH NG",
-        "D R AY V ",
+        "D R AY V",
         "D R AY V Z",
-        "D R OW V ",
+        "D R OW V",
         "D R AY V IH N",
         "D R AY V AH N",
         "D R IH V IH N",
@@ -107,7 +107,9 @@
         "W AA SH",
         "W AO SH",
         "W AA R SH",
-        "W AA SH IH N ",
+        "W AO R SH",
+        "W AO R SH IH NG",
+        "W AA SH IH N",
         "W AA SH IH NG",
         "W AO SH IH N",
         "W AO SH IH NG",
@@ -151,12 +153,14 @@
     "read": [
         "R IY D IH N",
         "R IY D IH NG",
-        "R IY D ",
+        "R IY D",
         "R EH D",
         "R IY D Z",
-        "R IY D AH N"
+        "R IY D AH N",
+        "R IY DX IH NG"
     ],
     "laugh": [
+        "L AE F",
         "L AE F IH N",
         "L AE F IH NG",
         "L AE F S",
@@ -178,7 +182,8 @@
         "W AO CH IH NG",
         "W AA CH AH N",
         "W AO CH AH N",
-        "L UH K IH N ",
+        "W AA R CH IH N",
+        "L UH K IH N",
         "L UH K IH NG",
         "L UH K",
         "L UH K S",
@@ -186,20 +191,21 @@
         "L UH K AH N"
     ],
     "give": [
-        "G IH V IH NG ",
+        "G IH V IH NG",
         "G IH V IH N",
         "G IH V AH N",
-        "G EY V ",
+        "G EY V",
         "G IH V Z",
-        "G IH V ",
-        "SH OW"
+        "G IH V",
+        "SH OW",
+        "HH AE N D IH NG"
     ],
     "swim": [
         "S W IH M IH N",
         "S W IH M AH N",
         "S W IH M IH NG",
         "S W IH M Z",
-        "S W AH M ",
+        "S W AH M",
         "S W AE M",
         "S W IH M"
     ],
@@ -214,10 +220,10 @@
         "M IH K S IH N",
         "M IH K S AH N",
         "M IH K T",
-        "M IH K S ",
+        "M IH K S",
         "M IH K S AH Z",
         "M IH K S IH Z",
-        "M EY K ",
+        "M EY K",
         "M EY K S",
         "M EY K IH N",
         "M EY K IH NG",
@@ -232,19 +238,20 @@
         "P IH N CH IH NG",
         "P IH N CH IH N",
         "P IH N CH AH N",
-        "P IH N CH ",
+        "P IH N CH",
         "P IH N CH T",
         "P IH N CH AH Z",
-        "P IH N CH IH Z"
+        "P IH N CH IH Z",
+        "P IY N CH"
     ],
     "crawl": [
         "K R AA L IH NG",
         "K R AA L IH N",
-        "K R AA L ",
+        "K R AA L",
         "K R AA L AH N",
         "K R AO L IH N",
         "K R AO L IH NG",
-        "K R AO L ",
+        "K R AO L",
         "K R AO L AH N",
         "K R AO L D",
         "K R AO L Z",
@@ -270,22 +277,23 @@
         "D IY L IH V ER",
         "D IY L IH V ER Z",
         "D IY L IH V ER D",
-        "B R IH NG IH NG ",
-        "B R IH NG ",
+        "B R IH NG IH NG",
+        "B R IH NG",
         "B R IH NG Z",
         "B R IH NG IH N",
-        "G IH V IH NG ",
+        "G IH V IH NG",
         "G IH V IH N",
         "G IH V AH N",
-        "G EY V ",
+        "G EY V",
         "G IH V Z",
-        "G IH V"
+        "G IH V",
+        "P UH DX"
     ],
     "pour": [
-        "P AO R IH NG ",
+        "P AO R IH NG",
         "P AO R IH N",
         "P AO R AH N",
-        "P AO R ",
+        "P AO R",
         "P AO R Z",
         "P AO R D"
     ],
@@ -306,15 +314,17 @@
         "HH AW L IH N",
         "HH AW L IY NG",
         "HH AW L D",
-        "HH AW L AH N"
+        "HH AW L AH N",
+        "HH AW AH L IH NG"
     ],
     "throw": [
         "TH R OW IH NG",
-        "TH R OW ",
+        "TH R OW",
         "TH R OW IH N",
         "TH R OW AH N",
         "TH R OW IH NG",
-        "TH R OW Z"
+        "TH R OW Z",
+        "P IH CH"
     ],
     "bite": [
         "B AY T IH NG",
@@ -325,13 +335,14 @@
         "B AY T AH N",
         "B AY D IH NG",
         "B AY T S",
-        "B IH T ",
+        "B IH T",
         "B AY IH N",
         "B AY AH N",
-        "B AY T "
+        "B AY T",
+        "B IH AH N"
     ],
     "shove": [
-        "SH AH V ",
+        "SH AH V",
         "SH AH V Z",
         "SH AH V D",
         "SH AH V IH NG",
@@ -348,7 +359,7 @@
     ],
     "tickle": [
         "T IH K AH L IH NG",
-        "T IH K AH L ",
+        "T IH K AH L",
         "T IH K L IH NG",
         "T IH K L IH N",
         "T IH K L AH N",
