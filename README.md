@@ -43,8 +43,8 @@ In addition to corpus downloading, this package contains a few additional resour
 
 >>> data = psstdata.load()
 
-psstdata INFO: Downloading a new data version: 2022-03-01
-psstdata INFO: Loaded data version 2022-03-01 from /Users/bobby/psst-data
+psstdata INFO: Downloading a new data version: 2022-03-02
+psstdata INFO: Loaded data version 2022-03-02 from /Users/bobby/psst-data
 
 ```
 
