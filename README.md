@@ -69,11 +69,11 @@ And each of those sets is a `PSSTUtteranceCollection`, which is a collection of 
 ```python
 >>> data.train[0]
 
-PSSTUtterance(id='ACWT02a-BNT01-house', session='ACWT02a', prompt='house', transcript='HH AW S', code='C', aq_index=74.6,  correctness=True, filename='train/audio/bnt/ACWT02a/ACWT02a-BNT01-house.wav', duration_frames=12752)
+PSSTUtterance(id='ACWT02a-BNT01-house', session='ACWT02a', prompt='house', transcript='HH AW S', aq_index=74.6, correctness=True, filename='audio/bnt/ACWT02a/ACWT02a-BNT01-house.wav', duration_frames=12752)
 
 >>> data.train['ACWT02a-BNT01-house']
 
-PSSTUtterance(id='ACWT02a-BNT01-house', session='ACWT02a', prompt='house', transcript='HH AW S', code='C', aq_index=74.6,  correctness=True, filename='train/audio/bnt/ACWT02a/ACWT02a-BNT01-house.wav', duration_frames=12752)
+PSSTUtterance(id='ACWT02a-BNT01-house', session='ACWT02a', prompt='house', transcript='HH AW S', aq_index=74.6, correctness=True, filename='audio/bnt/ACWT02a/ACWT02a-BNT01-house.wav', duration_frames=12752)
 ```
 
 ## Uninstalling
