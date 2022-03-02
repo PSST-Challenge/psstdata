@@ -23,9 +23,6 @@ With a minimum of Python 3.? installed, `psstdata` can be installed using `pip`:
 pip install psstdata
 ```
 
-- TSVs are similar in structure, different in length.
-- relative paths start at ..
-
 ## Contents
 
 In addition to corpus downloading, this package contains a few additional resources that could get you set up more quickly. These are referenced in the [baseline systems](https://github.com/PSST-Challenge/psstbaseline), which you are certainly welcome to use as an example or a jumping off point!
@@ -82,3 +79,11 @@ PSSTUtterance(id='ACWT02a-BNT01-house', session='ACWT02a', prompt='house', trans
 PSSTUtterance(id='ACWT02a-BNT01-house', session='ACWT02a', prompt='house', transcript_ipa="haʊ's", transcript_arpabet='HH AW S', filename='train/audio/bnt/ACWT02a/ACWT02a-BNT01-house.wav', duration_frames=12752, code='C', aq_index=74.6, is_correct=True)
 ```
 
+## Uninstalling
+
+Removing the package can be accomplished using pip:
+`pip uninstall psstdata`
+
+You may also want to delete the data and configs (Copy/paste `rm -rf` commands cautiously, of course!!)
+- Data: `rm -rf ~/psst-data`
+- Configs: `rm -rf ~/.config/psstdata`
