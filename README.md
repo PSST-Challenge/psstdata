@@ -53,15 +53,15 @@ This will download data to the default directory (`~/psst-data/`) and return an 
 ```python
 >>> len(data.train)
 
-2173
+2298
 
 >>> len(data.valid)
 
-325
+341
 
 >>> len(data.test)
 
-624
+652
 ```
 
 And each of those sets is a `PSSTUtteranceCollection`, which is a collection of `PSSTUtterance`:
