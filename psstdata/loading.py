@@ -9,9 +9,9 @@ from psstdata.downloading import download
 
 
 def load(
+        version_id: str = None,
         *,
         local_dir: str = None,
-        version_id: str = None,
         log_level=logging.INFO,
         artificial: bool = False
 ) -> PSSTData:
