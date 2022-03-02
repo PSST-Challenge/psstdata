@@ -4,7 +4,7 @@ This package downloads the data for the [PSST challenge](https://psst.study).
 
 ## If you run into issues
 
-First, note that this package was developed for and tested using Python 3.8, so switching to this version may serve as a workaround for some problems. If you still have problems, we'll be keeping an eye on [the project's issue tracker](https://github.com/PSST-Challenge/psstdata/issues).
+First, note that this package was developed for and tested using Python 3.8 (on MacOS), so switching to this version may serve as a workaround for some problems. If you still have problems, we'll be keeping an eye on [the project's issue tracker](https://github.com/PSST-Challenge/psstdata/issues).
 
 ## Access to the data
 
