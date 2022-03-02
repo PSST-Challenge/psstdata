@@ -5,7 +5,7 @@ import setuptools
 
 setuptools.setup(
     name='psstdata',
-    version='0.0.0a1',
+    version='0.0.0a4',
     author='Portland Allied Labs for Aphasia Technology (PALAT)',
     author_email='galer@ohsu.edu',
     packages=[

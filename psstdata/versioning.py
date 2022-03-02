@@ -6,7 +6,6 @@ from json import JSONDecodeError
 from typing import Dict, Tuple
 
 import psstdata
-from psstdata import CORRECTNESS_TASK, PHONEME_RECOGNITION_TASK
 from psstdata._system import cast_dict
 
 
@@ -23,19 +22,13 @@ class PSSTVersion:
     def local_dir(self):
         return os.path.join(self.root_dir, f"psst-data-{self.version_id}")
 
-    def files_phoneme_recognition_task(self):
-        return self.task_files(task=PHONEME_RECOGNITION_TASK)
-
-    def files_correctness_task(self):
-        return self.task_files(task=CORRECTNESS_TASK)
-
-    def task_files(self, task):
+    def tsv_files(self):
         results = {}
         for split_name, file in self.files.items():
             if file is None:
                 results[split_name] = None
             else:
-                results[split_name] = self._get_path(f"{split_name}/{task}_{split_name}.tsv")
+                results[split_name] = self._get_path(f"{split_name}/utterances_{split_name}.tsv")
         return results
 
     def _get_path(self, file):
@@ -81,13 +74,12 @@ class PSSTVersionCollection:
     @classmethod
     def from_disk(cls, dir):
         def check_version(version: PSSTVersion):
-            for task in CORRECTNESS_TASK, PHONEME_RECOGNITION_TASK:
-                for split, tsv in version.task_files(task=task).items():
-                    if tsv is None:
-                        continue
-                    if not os.path.exists(tsv):
-                        psstdata.logger.warning(f"Missing file {tsv}")
-                        return False
+            for split, tsv in version.tsv_files().items():
+                if tsv is None:
+                    continue
+                if not os.path.exists(tsv):
+                    psstdata.logger.warning(f"Missing file {tsv}")
+                    return False
             return True
 
         version_file = os.path.join(dir, "versions.json")

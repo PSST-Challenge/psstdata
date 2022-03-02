@@ -1,6 +1,7 @@
 exclude *
+include setup.py
 include psstdata
-recursive-include psstdata *.json *.wav *.tsv
+recursive-include psstdata *.json *.wav *.tsv *.md *.in *.py
 prune tests
 prune *.egg-info
 prune dist

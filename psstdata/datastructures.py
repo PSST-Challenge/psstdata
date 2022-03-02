@@ -56,12 +56,11 @@ class PSSTUtterance:
     id: str
     session: str
     prompt: str
-    transcript_ipa: str
-    transcript_arpabet: str
+    transcript: str
+    aq_index: float
+    correctness: bool
     filename: str
     duration_frames: int
-    aq_index: float = None
-    is_correct: bool = None
 
     root_dir: str = dataclasses.field(default=None, repr=False)
 
@@ -69,11 +68,6 @@ class PSSTUtterance:
     def filename_absolute(self):
         if not self.root_dir:
             raise NotADirectoryError(self.root_dir)
-
-        if self.filename[:5] in ("train", "valid", "test/"):
-            # Fix for pre-release data. Delete once data is officially released.
-            return os.path.abspath(os.path.join(os.path.dirname(self.root_dir), self.filename))
-
         return os.path.abspath(os.path.join(self.root_dir, self.filename))
 
     @property

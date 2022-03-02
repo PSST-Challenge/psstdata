@@ -33,7 +33,8 @@ def download(destination, version_id=None):
                 message = f"Couldn't connect to data server, and no data found in {os.path.abspath(destination)}"
                 raise PSSTDownloadError(message, e) from e
             latest_local_version = local_versions.latest()
-            psstdata.logger.warning(f"Unable to connect to TalkBank. Using latest local version {latest_local_version.version_id}")
+            psstdata.logger.error(f"Unable to connect to TalkBank. Using latest local version {latest_local_version.version_id}")
+            psstdata.logger.error(f"  {type(e)}: {e}")
             return latest_local_version
 
     psstdata.logger.info(f"Downloading a new data version: {version.version_id}")
