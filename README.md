@@ -2,6 +2,9 @@
 
 This package downloads the data for the [PSST challenge](https://psst.study).
 
+[![DOI](https://zenodo.org/badge/464440318.svg)](https://zenodo.org/badge/latestdoi/464440318)
+
+
 ## If you run into issues
 
 First, note that this package was developed for and tested using Python 3.8 (MacOS and Linux), so switching to this version may serve as a workaround for some problems. If you still have problems, we'll be keeping an eye on [the project's issue tracker](https://github.com/PSST-Challenge/psstdata/issues).
@@ -16,6 +19,10 @@ The `psstdata` tools will prompt for these credentials upon the first download. 
 
 If you're not using Python, or you'd like write your data-loading code, you can download the data set directly 
 from TalkBank. Once you have the password, head over to our resource page at [TalkBank](https://media.talkbank.org/aphasia/RaPID/). 
+
+### Usage Notes
+
+Conditions for using the PSST Dataset are described on the [task website](https://psst.study).
 
 ## Installation
 With a minimum of Python 3.? installed, `psstdata` can be installed using `pip`:
