@@ -28,7 +28,7 @@ The labels are in the file "asr_train.tsv", which is a UTF-8 encoded, tab-separa
       - Spoken noise is marked using `<spn>`
   - `correctness` is marked as `TRUE` if the production is "correct" according to the clinical scoring rules of the BNT/VNT, `FALSE` otherwise
       - For task 2 (correctness), this is the outcome label
-  - `aq_index` is the participant's Aphasia Quotient (AQ), as provided by AphasiaBank, which is a measure of spoken language impairment due to aphasia. Values can fall between between 0.0 and 100.0. A lower number indicates higher severity.
+  - `aq_index` is the participant's Aphasia Quotient (AQ).  AQ is the Western Aphasia Battery - Revised Aphasia Quotient (Kertesz, 2007) and it is a standardized total score that reflects overall aphasia severity. Values can fall between between 0.0 and 100.0. A lower number indicates higher severity.
   - `duration_frames` is the number of audio frames in each recording, or the duration in seconds times 16000
   - `filename` contains the relative path within the data pack to the file containing the audio recording for this production
 
