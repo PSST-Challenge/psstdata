@@ -52,8 +52,12 @@ def read_tsv(tsv_file: str, t: Type[T]) -> Iterable[T]:
 
 @lru_cache()
 def read_tsv_row_factory(t: Type[T]) -> Callable[[Iterable[str], Iterable[any]], T]:
+    casts_special = {
+        bool: lambda s: bool(json.loads(s.lower()))
+    }
+
     fields = {
-        field.name: field.type
+        field.name: casts_special.get(field.type, field.type)
         for field in dataclasses.fields(t)
     }
 
@@ -62,5 +66,6 @@ def read_tsv_row_factory(t: Type[T]) -> Callable[[Iterable[str], Iterable[any]],
             column: fields[column](value)
             for column, value in zip(columns, row)
         })
+
 
     return cast
