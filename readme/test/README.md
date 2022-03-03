@@ -7,12 +7,13 @@ This is the **test** partition of the PSST Challenge dataset, and should contain
 The contents of this data pack are organized as follows:
 
 ### The `./audio` directory
+
 The "audio" directory contains sub-directories for the BNT and VNT naming tasks (see task description for more details)
-    - Within each task directory, there is a subdirectory for each session (e.g. "elman11a")
-  - Within each session directory, there is a .wav file for each test item (e.g. "elman11a-BNT01-house.wav")
-  - The naming scheme is consistent across instances, but not all items are present for all speakers
-  - The audio files are mono audio recordings in standard PCM format, at a sampling rate of 16 kHz and a bitrate of 256 
-  - Within each task directory, there is a subdikb/s
+
+- Within each task directory, there is a subdirectory for each session (e.g. "elman11a")
+- Within each session directory, there is a .wav file for each test item (e.g. "elman11a-BNT01-house.wav")
+- The naming scheme is consistent across instances, but not all items are present for all speakers
+- The audio files are mono audio recordings in standard PCM format, at a sampling rate of 16 kHz and a bitrate of 256 kb/s
 
 ### The `./asr_test.tsv` file
 
