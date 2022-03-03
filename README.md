@@ -23,9 +23,15 @@ With a minimum of Python 3.? installed, `psstdata` can be installed using `pip`:
 pip install psstdata
 ```
 
+This only installs python code. The data will be downloaded to `~/psst-data` upon first usage (see [Basic Usage](#basic-usage)).
+
 ## Contents
 
-In addition to corpus downloading, this package contains a few additional resources that could get you set up more quickly. These are referenced in the [baseline systems](https://github.com/PSST-Challenge/psstbaseline), which you are certainly welcome to use as an example or a jumping off point!
+### Data Packs
+The data retrieved by this tool is described in detail in each data pack's README file. A copy of those files is available in this repository for each of the [train](readme/train/README.md), [valid](readme/valid/README.md), and [test](readme/test/README.md) data packs. (These three files have only trivial differences.)
+
+### Additional Resources
+This tool also provides some additional resources to get you set up more quickly. These are referenced in the [baseline systems](https://github.com/PSST-Challenge/psstbaseline), which you are certainly welcome to use as an example or a jumping off point!
 
 (Key: `python reference` — [json file]())
 
