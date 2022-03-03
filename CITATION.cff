@@ -8,7 +8,7 @@ authors:
   given-names: "Mikala"
 - family-names: "Bedrick"
   given-names: "Steven"
-- famliy-names: "Fergadiotis"
+- family-names: "Fergadiotis"
   given-names: "Gerasimos"
 title: Dataset and tools for the PSST Challenge on Post-Stroke Speech Transcription
 version: 1.0.0
