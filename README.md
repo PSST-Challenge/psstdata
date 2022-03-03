@@ -81,6 +81,32 @@ PSSTUtterance(utterance_id='ACWT02a-BNT01-house', session='ACWT02a', test='BNT',
 PSSTUtterance(utterance_id='ACWT02a-BNT01-house', session='ACWT02a', test='BNT', prompt='house', transcript='HH AW S', aq_index=74.6, correctness=True, filename='audio/bnt/ACWT02a/ACWT02a-BNT01-house.wav', duration_frames=12752)
 ```
 
+However, you'll basically only need four fields:
+
+```python
+# Print the first four records in the train data
+
+for utterance in data.train[:4]:
+
+    # The key ingredients
+    utterance_id = utterance.utterance_id
+    transcript = utterance.transcript
+    correctness = "Y" if utterance.correctness else "N"
+    filename = utterance.filename
+
+    print(f"{utterance_id:26s} {transcript:26s} {correctness:11s} {filename}")
+
+    
+""" utterance_id           transcript                 correctness filename
+
+ACWT02a-BNT01-house        HH AW S                    Y           audio/bnt/ACWT02a/ACWT02a-BNT01-house.wav
+ACWT02a-BNT02-comb         K OW M                     Y           audio/bnt/ACWT02a/ACWT02a-BNT02-comb.wav
+ACWT02a-BNT03-toothbrush   T UW TH B R AH SH          Y           audio/bnt/ACWT02a/ACWT02a-BNT03-toothbrush.wav
+ACWT02a-BNT04-octopus      AA S AH P R OW G P UH S    N           audio/bnt/ACWT02a/ACWT02a-BNT04-octopus.wav
+"""
+```
+
+
 ## Uninstalling
 
 Removing the package can be accomplished using pip:

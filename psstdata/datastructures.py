@@ -13,46 +13,32 @@ from psstdata._system import read_tsv
 from psstdata.versioning import PSSTVersion
 
 
-class AQSeverity(Enum):
-    MILD = 100
-    MODERATE = 75
-    SEVERE = 50
-    VERY_SEVERE = 25
-    UNKNOWN = -1
-
-    @classmethod
-    def from_score(cls, aq_index: Union[numbers.Number, str]):
-        # See this: ________
-        try:
-            if aq_index is None:
-                return cls.UNKNOWN
-            aq_index = float(aq_index)
-            return next(s for s in (cls.VERY_SEVERE, cls.SEVERE, cls.MODERATE, cls.MILD) if aq_index < s.value)
-        except Exception as e:
-            raise ValueError(f"Could not classify AQ score into severity: {e}")
-
-    def __str__(self):
-        return self.name
-
-    def __gt__(self, other):
-        return self.value > other.value
-
-    def __lt__(self, other):
-        return self.value < other.value
-
-
-@dataclass(frozen=True)
-class PSSTSessionMetadata:
-    session: str
-    aq_index: float
-
-    @property
-    def severity(self):
-        return AQSeverity.from_score(self.aq_index)
-
-
 @dataclass(frozen=True)
 class PSSTUtterance:
+    """
+    A record from utterances.tsv, and a response to an item in the Boston Naming Test (BNT) or Verb Naming Test (VNT).
+
+    utterance_id (str):     a unique identifier for each production, of the form
+                            {session}-{test}{item}-{prompt} (e.g. "ACWT02a-BNT01-house")
+    session (str):          the name of the AphasiaBank session from which the production was taken
+    test (str):             indicates which test each utterance comes from, either `BNT` (Boston
+                            Naming Test) or `VNT` (Verb Naming Test)
+    prompt (str):           an orthographic rendering of the target word. Silence is marked using
+                            `<sil>`. Spoken noise is marked using `<spn>`
+    transcript (str):       is the phonemic transcription of the production, in ARPAbet.
+    correctness (bool):     marked as `TRUE` if the production is "correct" according to the
+                            clinical scoring rules of the BNT/VNT, `FALSE` otherwise
+    aq_index (float):       is the participant's Aphasia Quotient (AQ).  AQ is the Western Aphasia
+                            Battery - Revised Aphasia Quotient (Kertesz, 2007) and it is a
+                            standardized total score that reflects overall aphasia severity. Values
+                            can fall between between 0.0 and 100.0. A lower number indicates higher
+                            severity.
+    duration_frames (int):  the number of audio frames in each recording, or the duration in
+                            seconds times 16000
+    filename (str):         the relative path within the data pack to the file containing the audio
+                            recording for this production
+    """
+
     utterance_id: str
     session: str
     test: str
@@ -80,7 +66,7 @@ class PSSTUtterance:
         return self.duration_frames / WAV_FRAME_RATE
 
     @property
-    def session_metadata(self) -> PSSTSessionMetadata:
+    def session_metadata(self) -> "PSSTSessionMetadata":
         return PSSTSessionMetadata(self.session, self.aq_index)
 
 
@@ -98,7 +84,7 @@ class PSSTUtteranceCollection(Iterable[PSSTUtterance]):
         return len(self.utterances)
 
     def __getitem__(self, item):
-        if isinstance(item, int):
+        if isinstance(item, (int, slice)):
             return self.utterances[item]
         if isinstance(item, str):
             return next(u for u in self.utterances if u.utterance_id == item)
@@ -146,3 +132,41 @@ class PSSTData:
 
     def items(self):
         return zip(("train", "valid", "test"), self)
+
+
+@dataclass(frozen=True)
+class PSSTSessionMetadata:
+    session: str
+    aq_index: float
+
+    @property
+    def severity(self) -> "AQSeverity":
+        return AQSeverity.from_score(self.aq_index)
+
+
+class AQSeverity(Enum):
+    MILD = 100
+    MODERATE = 75
+    SEVERE = 50
+    VERY_SEVERE = 25
+    UNKNOWN = -1
+
+    @classmethod
+    def from_score(cls, aq_index: Union[numbers.Number, str]):
+        # See this: ________
+        try:
+            if aq_index is None:
+                return cls.UNKNOWN
+            aq_index = float(aq_index)
+            return next(s for s in (cls.VERY_SEVERE, cls.SEVERE, cls.MODERATE, cls.MILD) if aq_index < s.value)
+        except Exception as e:
+            raise ValueError(f"Could not classify AQ score into severity: {e}")
+
+    def __str__(self):
+        return self.name
+
+    def __gt__(self, other):
+        return self.value > other.value
+
+    def __lt__(self, other):
+        return self.value < other.value
