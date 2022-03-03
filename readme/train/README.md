@@ -1,4 +1,4 @@
-# PSST Data README
+# PSST Data Pack README
 
 This data pack contains audio files and labels for the PSST Challenge: https://psst.study
 
@@ -15,9 +15,9 @@ The "audio" directory contains sub-directories for the BNT and VNT naming tasks 
 - The naming scheme is consistent across instances, but not all items are present for all speakers
 - The audio files are mono audio recordings in standard PCM format, at a sampling rate of 16 kHz and a bitrate of 256 kb/s
 
-### The `./asr_train.tsv` file
+### The `./utterances.tsv` file
 
-The labels are in the file "asr_train.tsv", which is a UTF-8 encoded, tab-separated file with the following fields:
+The labels are in the file "utterances.tsv", which is a UTF-8 encoded, tab-separated file with the following fields:
 
   - `utterance_id` is a unique identifier for each production, of the form {session}-{test}{item}-{prompt} (e.g. "ACWT02a-BNT01-house")
   - `session` is the name of the AphasiaBank session from which the production was taken

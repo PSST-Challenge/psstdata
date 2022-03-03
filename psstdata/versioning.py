@@ -28,7 +28,7 @@ class PSSTVersion:
             if file is None:
                 results[split_name] = None
             else:
-                results[split_name] = self._get_path(f"{split_name}/utterances_{split_name}.tsv")
+                results[split_name] = self._get_path(f"{split_name}/utterances.tsv")
         return results
 
     def _get_path(self, file):
