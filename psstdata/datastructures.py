@@ -58,10 +58,10 @@ class PSSTUtterance:
     test: str
     prompt: str
     transcript: str
-    aq_index: float
     correctness: bool
-    filename: str
+    aq_index: float
     duration_frames: int
+    filename: str
 
     root_dir: str = dataclasses.field(default=None, repr=False)
 

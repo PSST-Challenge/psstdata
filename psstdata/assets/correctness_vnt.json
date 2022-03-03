@@ -15,7 +15,8 @@
         "K AH DX IY N",
         "K AH DX IY NG",
         "K AH D IY NG",
-        "K AH T IY NG"
+        "K AH T IY NG",
+        "K AH DX AH"
     ],
     "bark": [
         "B AA R K IH NG",
@@ -157,7 +158,8 @@
         "R EH D",
         "R IY D Z",
         "R IY D AH N",
-        "R IY DX IH NG"
+        "R IY DX IH NG",
+        "R IH D IY NG"
     ],
     "laugh": [
         "L AE F",
@@ -197,8 +199,7 @@
         "G EY V",
         "G IH V Z",
         "G IH V",
-        "SH OW",
-        "HH AE N D IH NG"
+        "SH OW"
     ],
     "swim": [
         "S W IH M IH N",

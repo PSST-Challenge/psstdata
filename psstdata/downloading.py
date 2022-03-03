@@ -18,13 +18,17 @@ def download(destination, version_id=None):
         try:
             result = psstdata.networking.request("GET", _url("versions.json")).json()
             remote_versions = PSSTVersionCollection.from_object(result, root_dir=destination).apply_dir(destination)
-            if version_id != "ARTIFICIAL":
-                remote_versions.save(destination)
             version = remote_versions.latest() if version_id is None else remote_versions[version_id]
 
             if version_id is None and version.version_id in local_versions:
                 if version == local_versions[version.version_id]:
                     return version
+                if version.files["test"] is None and local_versions[version.version_id].files["test"] is not None:
+                    return local_versions[version.version_id]
+
+            if version_id != "ARTIFICIAL":
+                remote_versions.save(destination)
+
         except (requests.exceptions.ConnectionError, requests.HTTPError) as e:
             if version_id in local_versions:
                 # Reachable only when .files["test"] is None. Past due for some unit testing here.
