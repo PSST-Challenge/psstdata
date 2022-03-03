@@ -8,6 +8,7 @@ authors:
   given-names: "Mikala"
 - family-names: "Bedrick"
   given-names: "Steven"
+  orcid: "https://orcid.org/0000-0002-0163-9397"
 - family-names: "Fergadiotis"
   given-names: "Gerasimos"
 title: Dataset and tools for the PSST Challenge on Post-Stroke Speech Transcription
