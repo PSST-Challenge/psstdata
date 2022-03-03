@@ -33,8 +33,7 @@ In addition to corpus downloading, this package contains a few additional resour
   - `psstdata.VOCAB_ARPABET` — [psstdata/assets/vocab_arpabet.json](psstdata/assets/vocab_arpabet.json)  
   - `psstdata.VOCAB_ARPABET_JSON` (the filename for above)
 - **"Correct" pronunciations for the BNT/VNT tasks:**
-  - `psstdata.CORRECT_PRONUNCIATIONS_BNT` — [psstdata/assets/correctness_bnt.json](psstdata/assets/correctness_bnt.json) 
-  - `psstdata.CORRECT_PRONUNCIATIONS_VNT` — [psstdata/assets/correctness_vnt.json](psstdata/assets/correctness_vnt.json)
+  - `psstdata.ACCEPTED_PRONUNCIATIONS` — [psstdata/assets/correctness.json](psstdata/assets/correctness.json) 
 
 ## Basic usage
 
