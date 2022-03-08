@@ -99,17 +99,17 @@ for utterance in data.train[:4]:
     utterance_id = utterance.utterance_id
     transcript = utterance.transcript
     correctness = "Y" if utterance.correctness else "N"
-    filename = utterance.filename
+    filename_absolute = utterance.filename_absolute
 
-    print(f"{utterance_id:26s} {transcript:26s} {correctness:11s} {filename}")
+    print(f"{utterance_id:26s} {transcript:26s} {correctness:11s} {filename_absolute}")
 
     
-""" utterance_id           transcript                 correctness filename
+""" utterance_id           transcript                 correctness filename_absolute
 
-ACWT02a-BNT01-house        HH AW S                    Y           audio/bnt/ACWT02a/ACWT02a-BNT01-house.wav
-ACWT02a-BNT02-comb         K OW M                     Y           audio/bnt/ACWT02a/ACWT02a-BNT02-comb.wav
-ACWT02a-BNT03-toothbrush   T UW TH B R AH SH          Y           audio/bnt/ACWT02a/ACWT02a-BNT03-toothbrush.wav
-ACWT02a-BNT04-octopus      AA S AH P R OW G P UH S    N           audio/bnt/ACWT02a/ACWT02a-BNT04-octopus.wav
+ACWT02a-BNT01-house        HH AW S                    Y           /Users/bobby/audio/bnt/ACWT02a/ACWT02a-BNT01-house.wav
+ACWT02a-BNT02-comb         K OW M                     Y           /Users/bobby/audio/bnt/ACWT02a/ACWT02a-BNT02-comb.wav
+ACWT02a-BNT03-toothbrush   T UW TH B R AH SH          Y           /Users/bobby/audio/bnt/ACWT02a/ACWT02a-BNT03-toothbrush.wav
+ACWT02a-BNT04-octopus      AA S AH P R OW G P UH S    N           /Users/bobby/audio/bnt/ACWT02a/ACWT02a-BNT04-octopus.wav
 """
 ```
 
