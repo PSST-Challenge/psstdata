@@ -1,6 +1,6 @@
 # psstdata
 
-This package downloads the data for the [PSST challenge](https://psst.study).
+This package downloads the data for the [PSST challenge](https://psst.study) and provides python tools for loading & using the data.
 
 [![DOI](https://zenodo.org/badge/464440318.svg)](https://zenodo.org/badge/latestdoi/464440318)
 
