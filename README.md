@@ -4,13 +4,9 @@ This package downloads the data for the [PSST challenge](https://psst.study).
 
 [![DOI](https://zenodo.org/badge/464440318.svg)](https://zenodo.org/badge/latestdoi/464440318)
 
-<style>
-  .bibliography { padding: 2em; text-indent: -2em; }
-</style>
-
 ## Citing This Work
 
-<p class="bibliography">
+<p style="padding: 2em; text-indent: -2em;">
 Robert C. Gale, Mikala Fleegle, Gerasimos Fergadiotis, and Steven Bedrick. 2022. 
 <a href="https://aclanthology.org/2022.rapid-1.6">The Post-Stroke Speech Transcription (PSST) Challenge</a>.
 In Proceedings of the RaPID Workshop - Resources and ProcessIng of linguistic, para-linguistic and extra-linguistic Data 
@@ -18,7 +14,7 @@ from people with various forms of cognitive/psychiatric/developmental impairment
 and Evaluation Conference, pages 41–55, Marseille, France. European Language Resources Association.
 </p>
 
-<p class="bibliography">
+<p style="padding: 2em; text-indent: -2em;">
 Robert Gale, Mikala Fleegle, Steven Bedrick, and Gerasimos Fergadiotis. 2022. 
 <a href="https://zenodo.org/record/6326002#.ZF2wicHMKvA">Dataset and tools for the PSST Challenge on Post-Stroke Speech Transcription.</a>
 March. Project funded by the National Institute on Deafness and Other Communication Disorders 
@@ -26,7 +22,7 @@ grant number R01DC015999-04S1.
 <a href="https://zenodo.org/badge/latestdoi/464440318"><img src="https://zenodo.org/badge/464440318.svg" alt="DOI: 10.5281/zenodo.6326002"></a>
 </p>
 
-<p class="bibliography">
+<p style="padding: 2em; text-indent: -2em;">
 Brian MacWhinney, Davida Fromm, Margaret Forbes, and Audrey Holland. 2011.
 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3424615/">AphasiaBank: Methods for Studying Discourse.</a> 
 Aphasiology, 25(11):1286–1307.
