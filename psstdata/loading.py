@@ -49,7 +49,7 @@ def load(
     for split, tsv_file in tsv_files.items():
         data[split] = PSSTUtteranceCollection.from_tsv(tsv_file)
 
-    psstdata.logger.info(f"Loaded data version {version.version_id} from {local_dir}")
+    psstdata.logger.info(f"Loaded data version {version.version_id} at {local_dir}")
 
     return cast_dict({**data, "version": version, "test_is_placeholder": valid_as_test}, PSSTData)
 

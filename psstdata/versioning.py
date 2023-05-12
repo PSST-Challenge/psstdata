@@ -72,13 +72,14 @@ class PSSTVersionCollection:
         )
 
     @classmethod
-    def from_disk(cls, dir):
+    def from_disk(cls, dir, suppress_warnings=False):
         def check_version(version: PSSTVersion):
             for split, tsv in version.tsv_files().items():
                 if tsv is None:
                     continue
                 if not os.path.exists(tsv):
-                    psstdata.logger.warning(f"Missing file {tsv}")
+                    if not suppress_warnings:
+                        psstdata.logger.warning(f"Missing file {tsv}")
                     return False
             return True
 

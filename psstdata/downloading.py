@@ -1,6 +1,8 @@
 import os
 import shutil
 import tarfile
+from pathlib import Path
+from logging import INFO
 
 import requests
 
@@ -11,7 +13,7 @@ from psstdata.versioning import PSSTVersionCollection
 
 
 def download(destination, version_id=None):
-    local_versions = PSSTVersionCollection.from_disk(destination)
+    local_versions = PSSTVersionCollection.from_disk(destination, suppress_warnings=True)
     if version_id in local_versions and local_versions[version_id].files["test"] is not None:
         return local_versions[version_id]
     else:
@@ -56,7 +58,7 @@ def download(destination, version_id=None):
         except Exception as e:
             raise PSSTDownloadError(split, e) from e
 
-    local_versions = PSSTVersionCollection.from_disk(destination)
+    local_versions = PSSTVersionCollection.from_disk(destination, suppress_warnings=True)
     return local_versions[version.version_id]
 
 
@@ -68,14 +70,34 @@ def _download_split(destination_folder, split: str, url: str):
     incomplete = os.path.join(destination_folder, "incomplete")
 
     with psstdata.networking.request("GET", url, stream=True) as response:
+        content_length = response.raw.length_remaining
         with tarfile.open(fileobj=response.raw, mode="r:gz") as t:
             def itermembers():
                 for tarinfo in t:
+                    _log_progress(content_length, response.raw.length_remaining, split)
                     yield tarinfo
             t.extractall(incomplete, itermembers())
+            _log_progress(content_length, 0, split)
 
     shutil.move(os.path.join(incomplete, split), destination_folder)
+    Path(os.path.join(incomplete, ".DS_Store")).unlink(missing_ok=True)
     os.rmdir(incomplete)
+
+
+def _log_progress(content_length, length_remaining, split):
+    try:
+        percent_complete = 100 * (content_length - length_remaining) / content_length
+        if psstdata.logger.level <= INFO:
+            for logger_handler in psstdata.logger.handlers:
+                logger_handler.stream.flush()
+                logger_handler.stream.write(
+                    f"\rDownloading & extracting `{split}` "
+                    f"({percent_complete:.0f}% complete of {content_length * 1024**-2:.0f}MB)"
+                )
+                if length_remaining == 0:
+                    logger_handler.stream.write("\n")
+    except:
+        pass
 
 
 def _url(path):
